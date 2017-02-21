@@ -1,49 +1,57 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'JamshedVesuna/vim-markdown-preview'                 " preview markdown locally
+" Plug 'JamshedVesuna/vim-markdown-preview'                 " preview markdown locally
 Plug 'Valloric/ListToggle'                                " Toggling quickfix and location list
-Plug 'Yggdroot/indentLine'                                " show indent
-Plug 'airblade/vim-gitgutter'                             " git changes in gutter
-Plug 'bhipple/bde_plugins'                                " Tools for formatting code according to BDE Standards
-Plug 'bhipple/vimux'                                      " Vim and Tmux Integration
-Plug 'bling/vim-airline'                                  " Status line
-Plug 'christoomey/vim-tmux-navigator'                     " Window/Pane switching with Vim and Tmux
-Plug 'conradirwin/vim-bracketed-paste'                    " paste with no fuss
+" Plug 'Yggdroot/indentLine'                                " show indent
+" Plug 'airblade/vim-gitgutter'                             " git changes in gutter
+" Plug 'bhipple/bde_plugins'                                " Tools for formatting code according to BDE Standards
+" Plug 'bhipple/vimux'                                      " Vim and Tmux Integration
+" Plug 'bling/vim-airline'                                  " Status line
+" Plug 'christoomey/vim-tmux-navigator'                     " Window/Pane switching with Vim and Tmux
+" Plug 'conradirwin/vim-bracketed-paste'                    " paste with no fuss
 Plug 'ctrlpvim/ctrlp.vim'                                 " File searchin and opening
 Plug 'derekwyatt/vim-fswitch', { 'for': 'cpp' }           " Fastswitch (cpp/h toggle)
-Plug 'derekwyatt/vim-scala', { 'for': 'scala' }           " Scala syntax
-Plug 'easymotion/vim-easymotion'                          " I get around round round round
-Plug 'haya14busa/incsearch-fuzzy.vim'                     " introduce fuzzy fearch
-Plug 'haya14busa/incsearch.vim'                           " show search as you type
-Plug 'honza/vim-snippets'                                 " snippets repo
-Plug 'junegunn/vim-easy-align'                            " align things
-Plug 'junegunn/vim-peekaboo'                              " show content of registers
-Plug 'luochen1990/rainbow'                                " Rainbow parenthesis coloring
-Plug 'majutsushi/tagbar'                                  " view tags awesomely
-Plug 'mbbill/undotree'                                    " history visualizer
+" Plug 'derekwyatt/vim-scala', { 'for': 'scala' }           " Scala syntax
+" Plug 'easymotion/vim-easymotion'                          " I get around round round round
+" Plug 'haya14busa/incsearch-fuzzy.vim'                     " introduce fuzzy fearch
+" Plug 'haya14busa/incsearch.vim'                           " show search as you type
+" Plug 'honza/vim-snippets'                                 " snippets repo
+" Plug 'junegunn/vim-easy-align'                            " align things
+" Plug 'junegunn/vim-peekaboo'                              " show content of registers
+" Plug 'luochen1990/rainbow'                                " Rainbow parenthesis coloring
+" Plug 'majutsushi/tagbar'                                  " view tags awesomely
+" Plug 'mbbill/undotree'                                    " history visualizer
 Plug 'mhinz/vim-grepper'                                  " Asynchronous Grep -> QuickFix List
-Plug 'mhinz/vim-startify'                                 " dope start screen
-Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' } " enhanced C++11/14/17 highlighting
-Plug 'raimondi/delimitMate'                               " matching brackets
-Plug 'rhysd/vim-clang-format'                             " Vim wrapper plugin for clang-format
-Plug 'scrooloose/syntastic'                               " Syntax checking
-Plug 'sirver/ultisnips'                                   " snippet engine with integration into ycm
-Plug 'terryma/vim-expand-region'                          " quickly expand visual regions
-Plug 'tommcdo/vim-exchange'                               " cx operator for exchanging text regions
+" Plug 'mhinz/vim-startify'                                 " dope start screen
+" Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' } " enhanced C++11/14/17 highlighting
+" Plug 'raimondi/delimitMate'                               " matching brackets
+" Plug 'rhysd/vim-clang-format'                             " Vim wrapper plugin for clang-format
+" Plug 'scrooloose/syntastic'                               " Syntax checking
+" Plug 'sirver/ultisnips'                                   " snippet engine with integration into ycm
+" Plug 'terryma/vim-expand-region'                          " quickly expand visual regions
+" Plug 'tommcdo/vim-exchange'                               " cx operator for exchanging text regions
 Plug 'tpope/vim-commentary'                               " Comment/uncomment operator
-Plug 'tpope/vim-fugitive'                                 " Git Wrapper
-Plug 'tpope/vim-repeat'                                   " Dot operator for plugins
-Plug 'tpope/vim-rhubarb'                                  " github support
-Plug 'tpope/vim-surround'                                 " Surrounding text
-Plug 'tpope/vim-vinegar'                                  " netrw improvement
-Plug 'vim-airline/vim-airline-themes'                     " Status line themes
-Plug 'vim-scripts/Tabmerge'                               " Merge tabs into splits
-Plug 'wesQ3/vim-windowswap'                               " swap splits
+" Plug 'tpope/vim-fugitive'                                 " Git Wrapper
+" Plug 'tpope/vim-repeat'                                   " Dot operator for plugins
+" Plug 'tpope/vim-rhubarb'                                  " github support
+" Plug 'tpope/vim-surround'                                 " Surrounding text
+" Plug 'tpope/vim-vinegar'                                  " netrw improvement
+" Plug 'vim-airline/vim-airline-themes'                     " Status line themes
+" Plug 'vim-scripts/Tabmerge'                               " Merge tabs into splits
+" Plug 'wesQ3/vim-windowswap'                               " swap splits
 Plug 'yssl/QFEnter'                                       " quickfix open in different places
 
-if g:platform == "Linux" || g:platform == "Darwin"
-    Plug 'Valloric/YouCompleteMe'
-endif
+" if g:platform == "Linux" || g:platform == "Darwin"
+"     Plug 'Valloric/YouCompleteMe'
+" endif
+
+"========[ tmux ]========"
+" Plug 'bhipple/vimux'                                       " Vim and Tmux Integration
+Plug 'christoomey/vim-tmux-navigator'                      " Window/Pane switching with Vim and Tmux
+
+"========[ git ]========"
+" Plug 'tpope/vim-fugitive'                                  " Git Wrapper
+" Plug 'airblade/vim-gitgutter'                              " git changes in gutter
 
 call plug#end()
 
@@ -124,19 +132,19 @@ let g:rainbow_conf = {
 let g:windowswap_map_keys = 0 "prevent default bindings
 
 " YouCompleteMe
-let g:ycm_server_log_level = 'debug'
-let g:ycm_server_keep_logfiles = 0
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_always_populate_location_list = 1
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+" let g:ycm_server_log_level = 'debug'
+" let g:ycm_server_keep_logfiles = 0
+" let g:ycm_confirm_extra_conf = 0
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:ycm_always_populate_location_list = 1
+" let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
-if g:bbenv != "" && g:platform != "Darwin"
-    let g:ycm_seed_identifiers_with_syntax = 1
-    let g:ycm_server_python_interpreter = '/opt/bb/bin/python'
-else
-    let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/.ycm_extra_conf.py'
-endif
+" if g:bbenv != "" && g:platform != "Darwin"
+"     let g:ycm_seed_identifiers_with_syntax = 1
+"     let g:ycm_server_python_interpreter = '/opt/bb/bin/python'
+" else
+"     let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/.ycm_extra_conf.py'
+" endif
 
 " vim-expand-region
 vmap v <Plug>(expand_region_expand)
@@ -169,8 +177,8 @@ hi link EasyMotionTarget WarningMsg
 hi link EasyMotionShade  Comment
 
 " incsearch (with fuzz)
-map / :set hlsearch<CR><Plug>(incsearch-fuzzy-/)
-map ? :set hlsearch<CR><Plug>(incsearch-fuzzy-?)
+" map / :set hlsearch<CR><Plug>(incsearch-fuzzy-/)
+" map ? :set hlsearch<CR><Plug>(incsearch-fuzzy-?)
 
 " vim-markdown-preview
 let vim_markdown_preview_github=1

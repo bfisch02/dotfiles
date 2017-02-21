@@ -45,6 +45,8 @@ inoremap jk <Esc><Right>
 inoremap kj <Esc><Right>
 inoremap kk <Esc><Right>
 
+inoremap {<CR> {<CR>}<Esc>O
+
 "" ============================================================================
 ""                        Normal/Visual Mode Mappings
 "" ============================================================================
@@ -111,6 +113,7 @@ nnoremap <Leader>fj :FSSplitBelow<CR>
 nnoremap <Leader>fk :FSSplitAbove<CR>
 nnoremap <Leader>fl :FSSplitRight<CR>
 nnoremap <Leader>gb :call Cdroot()<CR>:Grepper -buffer<CR>
+nnoremap <Leader>ft :FSTab<CR>
 nnoremap <Leader>gg :call Cdroot()<CR>:Grepper<CR>
 nnoremap <Leader>glg :GV<CR>
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
@@ -139,5 +142,5 @@ xmap <Leader>ga <Plug>(EasyAlign)
 nmap <Leader>ga <Plug>(EasyAlign)
 
 " incsearch (no fuzz)
-nmap <Leader>/ :set hlsearch<CR><Plug>(incsearch-forward)
-nmap <Leader>? :set hlsearch<CR><Plug>(incsearch-backward)
+" nmap <Leader>/ :set hlsearch<CR><Plug>(incsearch-forward)
+" nmap <Leader>? :set hlsearch<CR><Plug>(incsearch-backward)

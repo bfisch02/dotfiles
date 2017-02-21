@@ -44,6 +44,9 @@ set shiftwidth=4
 " makes indenting a multiple of shiftwidth
 set shiftround
 
+" Set relative line numbers
+set relativenumber
+
 " Allow switching off modified buffers without warning
 set hidden
 
