@@ -1,6 +1,9 @@
 # Use Vi, not Emacs, style editing
 set editing-mode vi
 
+# for fzf completion like Ctrl+P in vim
+"\C-p":'~~\t'
+
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 "\C-l":'clear\n'

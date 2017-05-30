@@ -12,7 +12,7 @@ Plug 'Valloric/ListToggle'                                " Toggling quickfix an
 Plug 'ctrlpvim/ctrlp.vim'                                 " File searchin and opening
 Plug 'derekwyatt/vim-fswitch', { 'for': 'cpp' }           " Fastswitch (cpp/h toggle)
 " Plug 'derekwyatt/vim-scala', { 'for': 'scala' }           " Scala syntax
-" Plug 'easymotion/vim-easymotion'                          " I get around round round round
+Plug 'easymotion/vim-easymotion'                          " I get around round round round
 " Plug 'haya14busa/incsearch-fuzzy.vim'                     " introduce fuzzy fearch
 " Plug 'haya14busa/incsearch.vim'                           " show search as you type
 " Plug 'honza/vim-snippets'                                 " snippets repo
