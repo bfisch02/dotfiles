@@ -2,7 +2,7 @@
 set editing-mode vi
 
 # for fzf completion like Ctrl+P in vim
-"\C-p":'~~\t'
+"\C-p":'\C-t'
 
 "\e[A": history-search-backward
 "\e[B": history-search-forward
